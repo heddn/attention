@@ -1,0 +1,39 @@
+<?php
+/**
+ * @file attention.module
+ * Attention module
+ */
+/**
+ * assign css to a class
+ * hide the class in css
+ * position relative/absolute so it can slide from bottom
+ * slide up the class
+ * add div field with a close button
+ * use jquery to hide region onclick of close button
+ */
+/**
+ * Implementation of hook_help().
+ */
+function attention_help($path, $args) {
+	if ($path == 'admin/help#attention') {
+		return t(
+				'Grabs the attention of site visitors by displaying a block in some splashy manner');
+	}
+}
+
+/**
+ * Implementation of hook_init().
+ */
+function attention_init() {
+  $path = drupal_get_path('module', 'attention');
+  $info = drupal_parse_info_file($path . '/attention.info');
+  foreach ($info['scripts'] as $script) {
+  	drupal_add_js($path . '/' . $script);
+  }
+  foreach ($info['css'] as $css) {
+  	drupal_add_css($path . '/' . $css);
+  }
+    $path = libraries_get_path('jquery.ui');
+    drupal_add_js($path . '/external/cookie/jquery.cookie.min.js');
+  jquery_ui_add('ui.slider');
+}

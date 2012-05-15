@@ -1,0 +1,9 @@
+name = attention
+description = Grabs the attention of site visitors by displaying a block in some splashy manner
+dependencies[] = jquery_update
+dependencies[] = jquery_ui
+dependencies[] = libraries
+package = Other
+core = 6.x
+scripts[] = attention.js
+css[] = attention.css

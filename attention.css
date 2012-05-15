@@ -1,0 +1,21 @@
+.attention {
+	border-color: grey;
+	border-radius: 35% 35% 35% 35%;
+	border-style: solid;
+	border-width: 0.5px;
+	font: 9px/150% Courier, monospace;
+	height: 15px;
+	position: absolute;
+	width: 15px;
+	z-index: 100;
+}
+
+#attentionMinimize {
+	right: 18px;
+	top: 0px;
+}
+
+#attentionClose {
+	right: 0px;
+	top: 0px;
+}
