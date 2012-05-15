@@ -9,7 +9,7 @@ INTRODUCTION
 ------------
 
 Author:
-* Lucas Hedding (lucashedding)
+* Lucas Hedding (heddn)
 
 This module grabs the attention of a site visitor in some splashy way
 
